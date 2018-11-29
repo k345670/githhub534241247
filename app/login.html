@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="static/css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="static/css/login.css"/>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	</head>
+	<body>
+		<div class="register_wrapper">
+			<div class="register">
+				<div class="logo">
+					<img src="static/images/login/vivo-logo.jpg" />
+					<span>vivo账号注册</span>
+				</div>
+				<form action="../server/php/login.php" method="get" class="box" autocomplete="on">
+					<div class="form-group has-success code">
+					  	<label for="username"></label>
+					  	<input type="text" class="form-control" id="tel" name="tel" placeholder="请输入手机号" data-error="请输入正确的手机号">
+						<p class=""></p>
+						<input type="button" name="codebtn" id="codebtn" value="获取验证码" />
+					</div>
+					<div class="form-group has-success">
+					  	<label for="sex"></label>
+					  	<span style="display: none;" class="text-success">短信验证已发送至：</span>
+					  	<input type="text" class="form-control" name="code" placeholder="请输入短信验证码" data-error="验证码不正确">
+					  	<p class=""></p>
+					</div>
+					<div class="form-group has-success code">
+					  	<label for="age"></label>
+					  	<input type="text" class="form-control" name="password"  placeholder="设置密码 : 8-16位数字和字母" data-error="密码正确">
+					  	<button class="eye"><img src="static/images/login/eyes-off.png"/></button>
+					  	<p class=""></p>
+					</div>
+					<button  name="submit" class="send" value="注册">完成注册</button>
+				</form>
+			</div>
+			<div class="footer">
+				<a href="#"><img src="static/images/login/online-service.png" />在线客服</a>
+				<a href="#"><img src="static/images/login/tel.png" />400-678-9688(24小时全国服务热线)</a>
+				<span>COPYRIGHT © 1996-2017  ALLRIGHTS RESERVED.粤ICP备05100288号</span>
+			</div>
+		</div>
+	</body>
+</html>

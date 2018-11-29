@@ -1,0 +1,89 @@
+body{
+	height: 1020px;
+	background:#f7f7f5!important;
+}
+.logo{
+	text-align: center;
+	padding-top: 60px;
+}
+.logo span{
+	display: block;
+	font-size: 20px;
+	margin: 25px 0 60px;
+}
+.register_wrapper{
+	width: 100%;
+}
+.register{
+	background: #fff;
+	width: 60%;
+	height: 680px;
+	margin: 100px auto;
+		}
+.box{
+	width: 400px;
+	margin: 0 auto;
+}
+.box span{
+	padding-left: 10px;
+	font-size: 13px;
+	margin-bottom: 10px;
+}
+.box input{
+	width:400px!important;
+	height:60px!important;
+	border-color: #ccc!important;
+		}
+.box .send{
+	width: 400px;
+	height: 60px;
+	background: #056BE8;
+	color: #fff;
+	font-size: 18px;
+	border: 0;
+	outline: none;
+}
+.code{
+	position: relative;
+}
+#codebtn{
+	position: absolute;
+	height: 40px!important;
+	width: 100px!important;
+	top: 30px;
+	background: #fff;
+	border:0;
+	color:#056BE8;
+	right: 2px;
+	border-left: 1px solid #CCCCCC;
+}
+.eye{
+	position: absolute;
+	top: 40px;
+	right: 30px;
+	background: #fff;
+	border: 0;
+}
+.eye img{
+	width: 30px;
+	height: 20px;	
+}
+.footer{
+	text-align: center;
+	margin-top: 200px;
+}
+.footer a{
+	display: inline-block;
+	color: #000000;
+	margin-left: 40px ;
+}
+.footer a img{
+	margin-right: 10px;
+	width: 20px;
+	height: 20px;
+}
+.footer span{
+	color: #ccc;
+	display: block;
+	margin-top: 15px;
+}

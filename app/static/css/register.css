@@ -1,0 +1,92 @@
+body{
+	height: 900px;
+	background:#f7f7f5!important;
+}
+.register_wrapper{
+	width: 100%;
+	background: #f8d8ed;
+}
+.register{
+	margin: 0 auto;
+	width: 80%;
+	height:700px;
+	background: url(../images/register/banner.jpg) no-repeat;
+	background-size: 100% 700px;
+	position: relative;
+}
+.box{
+	width: 420px;
+	height: 500px;
+	background: #fff;
+	position: absolute;
+	right: 20px;
+	top: 110px;
+	text-align: center;
+}
+.box .top{
+	display: block;
+	font-size: 22px;
+	padding-top: 25px;
+}
+.box input{
+	width:380px!important;
+	height:45px!important;
+	margin: 0 auto;
+	border-color: #ccc!important;
+	
+	}
+.box .hint{
+	float: left;
+	margin-left: 20px;
+}
+.box .title{
+	float: right;
+	margin-right: 20px;
+}
+.box button{
+	width: 380px;
+	height: 45px;
+	margin-top: 20px;
+	border: 1px solid #ccc;
+	background: #FFFFFF;
+	color: #000000;
+}
+.box .send{
+	background: #056BE8;
+	color:#fff
+}
+.box .list a{
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	margin: 5px;
+}
+.box .list a img{
+	width: 100%;
+	height: 100%;
+}
+.box .list p{
+	font-size: 12px;
+	color: #CCC;
+	margin-top: 25px;
+}
+.footer{
+	text-align: center;
+	margin-top: 50px;
+}
+.footer a{
+	display: inline-block;
+	color: #666666;
+	margin-left: 40px ;
+	font-size: 12px;
+}
+.footer a img{
+	margin-right: 10px;
+	width: 20px;
+	height: 20px;
+}
+.footer span{
+	color: #ccc;
+	display: block;
+	margin-top: 15px;
+}

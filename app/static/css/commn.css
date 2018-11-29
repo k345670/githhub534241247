@@ -1,0 +1,56 @@
+.content{
+	margin: 0 auto;
+	width: 1200px;
+}
+.header_wrapper{
+	background: #2f2f2f;
+	height: 55px;	
+}
+.header{
+	background: #2f2f2f;
+	height: 55px;
+}
+.logo{
+	margin-right: 70px;
+	float: left;
+}
+.logo a{
+	line-height: 55px;
+	color:#008ddc;
+	font-size: 20px;
+}
+.nav ul li{
+	text-align: center;
+	float: left;
+}
+.nav ul li a{
+	display: block;
+	box-sizing: border-box;
+	line-height: 55px;
+	width: 90px;
+	font-size:14px;
+	color:#fff;
+}
+.nav ul li a:hover{
+	color:#ccc;
+}
+.header_left{
+	float: right;
+}
+.header_left a{
+	float: left;
+	display: block;
+	width: 65px;
+	line-height: 55px;
+	text-align: center;
+}
+.header_left a i{
+	width: 100%;
+	color: #fff;
+}
+.header_left a i:hover{
+	color:#ccc;
+}
+.footer_wrapper{
+	
+}
