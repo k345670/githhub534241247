@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="static/css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="static/css/iconfont.css"/>
+		<link rel="stylesheet" type="text/css" href="static/css/commn.css"/>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.2/css/swiper.min.css">
+		<link rel="stylesheet" type="text/css" href="static/css/index.css"/>
+	</head>
+	<body>
+			<!--引入swiper-->
+		<script>        
+		  var mySwiper = new Swiper ('.swiper-container', {
+		    direction: 'vertical', // 垂直切换选项
+		    loop: true, // 循环模式选项
+		    
+		    // 如果需要分页器
+		    pagination: {
+		      el: '.swiper-pagination',
+		    },
+		    // 如果需要滚动条
+		    scrollbar: {
+		      el: '.swiper-scrollbar',
+		    },
+		  })        
+ 		</script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.2/js/swiper.min.js"></script>
+		<script src="static/js/jquery.js"></script>
+			<!--头部-->
+		<div class="header_wrapper"></div>
+		<script>
+			$('.header_wrapper').load("common/header.html");
+		</script>
+			<!--轮播图-->
+		<div class="swiper-container common">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide"><a href="#"><img src="static/images/index/banner01.jpg" style="width: 100%; height: 550px; margin-top: -1px; /"></a></div>
+				<div class="swiper-slide"><a href="#"><img src="static/images/index/banner02.jpg" style="width: 100%; height: 550px; margin-top: -1px; /"></a></div>
+				<div class="swiper-slide"><a href="#"><img src="static/images/index/banner03.jpg" style="width: 100%; height: 550px; margin-top: -1px; /"></a></div>
+				<div class="swiper-slide"><a href="#"><img src="static/images/index/banner04.jpg" style="width: 100%; height: 550px; margin-top: -1px; /"></a></div>
+				<div class="swiper-slide"><a href="#"><img src="static/images/index/banner05.jpg" style="width: 100%; height: 550px; margin-top: -1px; /"></a></div>
+				<div class="swiper-pagination"></div>
+				<div class="swiper-scrollbar"></div>
+				<script language="javascript"> 
+				  var mySwiper = new Swiper('.swiper-container',{
+				    speed:2500,
+				    loop : true,
+				    autoplay: {
+				      delay: 2000,
+				      disableOnInteraction: false,
+				      waitForTransition: false,
+				    },
+				  })
+//				  mySwiper.el.onmouseover = function(){
+//					mySwiper.autoplay.stop();
+//					}
+//				  mySwiper.el.onmouseenter = function(){
+//					mySwiper.autoplay();
+//					}
+				</script>
+			</div>
+			<div class="banner_nav">
+				<div class="list">
+					<div class="listone"><a href="#">手机<i class="iconfont icon-k-yjt"></i></a>
+						<div class="nav_list">
+							<h2>
+								<span>手机</span>
+								<a href="#">全部手机<i class="iconfont icon-k-yjt"></i></a>
+							</h2>
+							<ul class="list_title">
+								<li>
+									<a href="#">NEX系列</a>
+									<a href="#">X系列</a>
+									<a href="#">Z系列</a>
+									<a href="#">Y系列</a>
+								</li>
+							</ul>
+							<ul class="list_details">
+								<li>
+									<a href="#"><img src="static/images/index/img01.png" /><span>热销</span> 6GB + 128GB</a>
+									<a href="#"><img src="static/images/index/img02.png" /><span>推荐</span>Z3全面屏 6GB + 64GB</a>
+									<a href="#"><img src="static/images/index/img03.png" />X3幻彩版 6GB + 128GB</a>
+									<a href="#"><img src="static/images/index/img04.png" />X23全面屏 8GB + 128GB</a>
+									<a href="#"><img src="static/images/index/img05.png" />Y73全面屏 3GB + 32GB</a>
+									<a href="#"><img src="static/images/index/img06.png" />NEX旗舰版 8GB + 128GB</a>
+									<a href="#"><img src="static/images/index/img07.png" />Z1全面屏 6GB + 64GB</a>
+									<a href="#"><img src="static/images/index/img08.png" />X21s全面屏 6GB + 128GB</a>
+									<a href="#"><img src="static/images/index/img09.png" />Z3全面屏 6GB + 128GB</a>
+									<a href="#"><img src="static/images/index/img10.png" />Z1全面屏 4GB + 64GB</a>
+									<a href="#"><img src="static/images/index/img11.png" />Y83全网通 4GB + 32GB</a>
+									<a href="#"><img src="static/images/index/img12.png" />Z1青春版 4GB + 32GB</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="listone"><a href="#">充电<i class="iconfont icon-k-yjt"></i></a>
+						<div class="nav_list">
+							<h2>
+								<span>充电</span>
+								<a href="#">全部充电<i class="iconfont icon-k-yjt"></i></a>
+							</h2>
+							<ul class="list_details dale">
+								<li>
+									<a href="#"><img src="static/images/index/icons01.png" /><span>热销</span> 原装闪充数据线</a>
+									<a href="#"><img src="static/images/index/icons02.png" /><span>推荐</span> 原装10V/2.25A闪充充电器</a>
+									<a href="#"><img src="static/images/index/icons03.png" />原装Micro USB数据线</a>
+									<a href="#"><img src="static/images/index/icons04.png" />原装9V/2A双引擎闪充</a>
+									<a href="#"><img src="static/images/index/icons05.png" />原装Type-C数据线</a>
+									<a href="#"><img src="static/images/index/icons06.png" />MGE金属编织数据线</a>
+									<a href="#"><img src="static/images/index/icons07.png" />MGE二合一数据线</a>
+									<a href="#"><img src="static/images/index/icons08.png" />MGE多彩数据线</a>
+									<a href="#"><img src="static/images/index/icons09.png" />原装低压闪充充电器</a>
+									<a href="#"><img src="static/images/index/icons10.png" />vivo原装旅行充电器</a>
+									<a href="#"><img src="static/images/index/icons11.png" />MGE牛仔布数据线</a>
+									<a href="#"><img src="static/images/index/icons12.png" />航嘉 小U升级版排插</a>
+									<a href="#"><img src="static/images/index/icons13.png" />公牛数显车载USB充电器</a>
+									<a href="#"><img src="static/images/index/icons14.png" />公牛多国旅行USB转换器</a>
+									<a href="#"><img src="static/images/index/icons15.png" />公牛USB插座</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="listone"><a href="#">音乐<i class="iconfont icon-k-yjt"></i></a>
+						<div class="nav_list">
+							<h2>
+								<span>音乐</span>
+								<a href="#">全部音乐<i class="iconfont icon-k-yjt"></i></a>
+							</h2>
+							<ul class="list_details dale">
+								<li>
+									<a href="#"><img src="static/images/index/music01.png" /><span>热销</span>XE100原装耳机</a>
+									<a href="#"><img src="static/images/index/music02.png" /><span>推荐</span>XE16原装耳机</a>
+									<a href="#"><img src="static/images/index/music03.png" />XE710原装耳机</a>
+									<a href="#"><img src="static/images/index/music04.png" />XE7680原装耳机</a>
+									<a href="#"><img src="static/images/index/music05.png" />Linner NC21 Pro主动降...</a>
+									<a href="#"><img src="static/images/index/music06.png" />XE600i原装耳机</a>
+									<a href="#"><img src="static/images/index/music07.png" />QCY Q25蓝牙耳机</a>
+									<a href="#"><img src="static/images/index/music08.png" />出门问问 小问智能耳机</a>
+									<a href="#"><img src="static/images/index/music09.png" />天猫精灵M1</a>
+									<a href="#"><img src="static/images/index/music10.png" />ZACK 随享蓝牙音箱</a>
+									<a href="#"><img src="static/images/index/music11.png" />欧特雷 X8蓝牙耳机</a>
+									<a href="#"><img src="static/images/index/music12.png" />西柚X-metal 头戴式蓝牙...</a>
+									<a href="#"><img src="static/images/index/music13.png" />得胜&全民K歌 Q5手机...</a>
+									<a href="#"><img src="static/images/index/music14.png" />欧特雷 蓝牙耳机Q10</a>
+									<a href="#"><img src="static/images/index/music15.png" />欧特雷 蓝牙耳机Q62</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="listone"><a href="#">配件<i class="iconfont icon-k-yjt"></i></a>
+						<div class="nav_list">
+							<h2>
+								<span>配件</span>
+								<a href="#">全部配件<i class="iconfont icon-k-yjt"></i></a>
+							</h2>
+							<ul class="list_details dale">
+								<li>
+									<a href="#"><img src="static/images/index/parts01.jpg" /><span>热销</span>螃蟹壳二代游戏支架</a>
+									<a href="#"><img src="static/images/index/parts02.jpg" /><span>推荐</span>极米 X-Desktop桌面支架</a>
+									<a href="#"><img src="static/images/index/parts03.jpg" />X23硅胶保护壳</a>
+									<a href="#"><img src="static/images/index/parts04.png" />X21系列原装保护膜</a>
+									<a href="#"><img src="static/images/index/parts05.png" />X23原装高透保护膜</a>
+									<a href="#"><img src="static/images/index/parts06.jpg" />NEX原装高透保护膜</a>
+									<a href="#"><img src="static/images/index/parts07.png" />镭拓 GTS时尚游戏鼠标垫</a>
+									<a href="#"><img src="static/images/index/parts08.png" />飞智 Wee拉伸手柄</a>
+									<a href="#"><img src="static/images/index/parts09.png" />X21硅胶手机保护壳</a>
+									<a href="#"><img src="static/images/index/parts10.png" />X21屏幕指纹保护壳</a>
+									<a href="#"><img src="static/images/index/parts11.png" />ROCK 桌面手机支架</a>
+									<a href="#"><img src="static/images/index/parts12.png" />小鸡王座Z1游戏键盘</a>
+									<a href="#"><img src="static/images/index/parts13.png" />闪迪至尊版存储卡 64G</a>
+									<a href="#"><img src="static/images/index/parts14.png" />罗技 蓝牙无线鼠标</a>
+									<a href="#"><img src="static/images/index/parts15.jpg" />Autobot 车载磁吸手机支架</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="listone"><a href="#">智能<i class="iconfont icon-k-yjt"></i></a>
+							<div class="nav_list">
+							<h2>
+								<span>智能</span>
+								<a href="#">全部智能<i class="iconfont icon-k-yjt"></i></a>
+							</h2>
+							<ul class="list_details dale">
+								<li>
+									<a href="#"><img src="static/images/index/capacity01.jpg" /><span>热销</span>科沃斯 扫地机器人DK36</a>
+									<a href="#"><img src="static/images/index/capacity02.png" /><span>推荐</span>乐心手环MAMBO2</a>
+									<a href="#"><img src="static/images/index/capacity03.png" />乐心手环3</a>
+									<a href="#"><img src="static/images/index/capacity04.png" />乐心手环 大麦版</a>
+									<a href="#"><img src="static/images/index/capacity05.png" />拉卡拉 跨界手环</a>
+									<a href="#"><img src="static/images/index/capacity06.png" />乐心智能手环ziva</a>
+									<a href="#"><img src="static/images/index/capacity07.png" />乐心手环ZIVA plusa>
+									<a href="#"><img src="static/images/index/capacity08.png" />鱼跃 e-Tens智能手机按摩帖</a>
+									<a href="#"><img src="static/images/index/capacity09.png" />好写 光能小黑板</a>
+									<a href="#"><img src="static/images/index/capacity10.png" />乐心 MAMBO2礼盒版</a>
+									<a href="#"><img src="static/images/index/capacity11.png" />爱奇艺 电视果3</a>
+									<a href="#"><img src="static/images/index/capacity12.png" />乐心体脂秤S5mini</a>
+									<a href="#"><img src="static/images/index/capacity13.png" />倍轻松 iSee18 眼部按摩器</a>
+									<a href="#"><img src="static/images/index/capacity14.png" />大华家庭摄像头TP7</a>
+									<a href="#"><img src="static/images/index/capacity15.png" />倍轻松 龙抓手头部按摩仪</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="listone"><a href="#">摄影<i class="iconfont icon-k-yjt"></i></a>
+						<div class="nav_list">
+							<h2>
+								<span>摄影</span>
+								<a href="#">全部摄影<i class="iconfont icon-k-yjt"></i></a>
+							</h2>
+							<ul class="list_details dale">
+								<li>
+									<a href="#"><img src="static/images/index/shoot01.png" /><span>热销</span>猎奇 三合一手机镜头</a>
+									<a href="#"><img src="static/images/index/shoot02.png" /><span>推荐</span>Jji 手机美颜补光灯</a>
+									<a href="#"><img src="static/images/index/shoot03.png" />Jji 迷你三脚架</a>
+									<a href="#"><img src="static/images/index/shoot04.png" />飞蝗 蓝牙自拍杆</a>
+									<a href="#"><img src="static/images/index/shoot05.png" />飞宇 Vimble2手持稳定器</a>
+									<a href="#"><img src="static/images/index/shoot06.png" />惠普 ZINK 照片纸</a>
+									<a href="#"><img src="static/images/index/shoot07.png" />远点拍线控自拍杆</a>
+									<a href="#"><img src="static/images/index/shoot08.png" />Jji SS500 蓝牙补光自拍杆</a>
+									<a href="#"><img src="static/images/index/shoot09.png" />惠普小印照片打印机</a>
+									<a href="#"><img src="static/images/index/shoot10.png" />佳能 小型照片打印机</a>
+									<a href="#"><img src="static/images/index/shoot11.png" />远点拍 蓝牙三脚架自拍杆</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="listone"><a href="#">生活<i class="iconfont icon-k-yjt"></i></a>
+						<div class="nav_list">
+							<h2>
+								<span>生活</span>
+								<a href="#">全部生活<i class="iconfont icon-k-yjt"></i></a>
+							</h2>
+							<ul class="list_details dale">
+								<li>
+									<a href="#"><img src="static/images/index/life01.jpg" /><span>热销</span>森荣 衣服防皱收纳袋(套装)</a>
+									<a href="#"><img src="static/images/index/life02.jpg" /><span>推荐</span>森荣 洗漱收纳包</a>
+									<a href="#"><img src="static/images/index/life03.jpg" />森荣 旅行收纳鞋盒</a>
+									<a href="#"><img src="static/images/index/life04.jpg" />素士 牙线棒D1</a>
+									<a href="#"><img src="static/images/index/life05.png" />智途 金属宝珠笔</a>
+									<a href="#"><img src="static/images/index/life06.png" />力博得声波牙刷SA·逸享</a>
+									<a href="#"><img src="static/images/index/life07.jpg" />Autobot 车载吸尘器</a>
+									<a href="#"><img src="static/images/index/life08.jpg" />森荣 旅行多功能收纳包</a>
+									<a href="#"><img src="static/images/index/life09.png" />kappa 粒子护颈枕</a>
+									<a href="#"><img src="static/images/index/life10.png" />Guildford折叠双肩包</a>
+									<a href="#"><img src="static/images/index/life11.png" />CLICK立体防盗背包</a>
+									<a href="#"><img src="static/images/index/life12.jpg" />向物 小呆暖风机D3</a>
+									<a href="#"><img src="static/images/index/life13.png" />Guildford便携鞋盒 64G</a>
+									<a href="#"><img src="static/images/index/life14.png" />Guildford衣服防皱袋套装</a>
+									<a href="#"><img src="static/images/index/life15.png" />PURE 书源 中性笔10支装</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="main content">
+			<div class="top_list">
+				<ul>
+					<li><a href="#"><img src="static/images/index/top_list01.jpg" /></a></li>
+					<li><a href="#"><img src="static/images/index/top_list02.jpg" /></a></li>
+					<li><a href="#"><img src="static/images/index/top_list03.jpg" /></a></li>
+					<li><a href="#"><img src="static/images/index/top_list04.jpg" /></a></li>
+				</ul>
+			</div>
+			<div class="module">
+				<div class="top">
+					<b>热卖专区</b>
+					<a href="#">更多<i class="iconfont icon-k-yjt"></i></a>
+				</div>
+				<div class="first_list">
+					<div class="first">
+						<div class="first_box">
+							<div class="before">
+								<a href="#"><img src="static/images/index/list01.png" /></a>
+								<p>X23 全面屏-8色可选</p>
+								<p>双涡轮加速引擎|零光感人脸识别</p>
+								<p>￥3498.00</p>
+							</div>
+							<div class="later">
+								<a href="#"><img src="static/images/index/list01.png" /></a>
+								<p>X23 全面屏-星芒版</p>
+								<ul>
+									<a href="#" style="background:#a5142f;"></a>
+									<a href="#" style="background:#f9f2fe;"></a>
+									<a href="#" style="background:#040519;"></a
+									<a href="#" style="background:#5a0878;"></a>
+									<a href="#" style="background:#f79646;"></a>
+									<a href="#" style="background:#e10e14;"></a>
+									<a href="#" style="background:#091545;"></a>
+									<a href="#" style="background:#890678;"></a>
+								</ul>
+								<p>￥3498.00</p>
+							</div>
+						</div>
+						<div class="first_box">
+							<div class="before">
+								<a href="#"><img src="static/images/index/list02.png" /></a>
+								<p>Z3全面屏 6GB + 128GB-3色可选</p>
+								<p>直降一百元|晓龙710AIE处理器</p>
+								<p>￥2198.00</p>
+							</div>
+							<div class="later">
+								<a href="#"><img src="static/images/index/list02.png" /></a>
+								<p>Z3全面屏 6GB + 128GB-极光蓝</p>
+								<ul>
+									<a href="#"></a>
+									<a href="#"></a>
+									<a href="#"></a
+								</ul>
+								<p>￥2198.00</p>
+							</div>
+						</div>
+						<div class="first_box">
+							<div class="before">
+								<a href="#"><img src="static/images/index/list03.png" /></a>
+								<p>NEX全面屏6GB + 128GB-2色可选</p>
+								<p>直降四百元|升降式前置摄像头</p>
+								<p>￥3498.00</p>
+							</div>
+							<div class="later">
+								<a href="#"><img src="static/images/index/list03.png" /></a>
+								<p>NEX全面屏6GB + 128GB-星钻黑</p>
+								<ul>
+									<a href="#"></a>
+									<a href="#"></a>
+								</ul>
+								<p>￥3498.00</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="top">
+					<b>精品手机</b>
+					<a href="#">更多<i class="iconfont icon-k-yjt"></i></a>
+				</div>
+				<div class="second_list">
+						<div class="second">
+							<div class="img"><a href="#"><img src="static/images/index/list04.jpg" /></a></div>
+							<div class="first_box clearfix">
+								<div class="before">
+									<a href="#"><img src="static/images/index/list05.png" /></a>
+									<p>X21s 6GB + 128GB-星夜黑</p>
+									<p>屏幕指纹解锁|双涡轮加速引擎</p>
+									<p>￥2598.00</p>
+								</div>
+								<div class="later">
+									<a href="#"><img src="static/images/index/list05.png" /></a>
+									<p>X21s 6GB + 128GB-星夜黑</p>
+									<ul>
+										<a href="#" style="background: #000000;"></a>
+									</ul>
+									<p>￥2598.00</p>
+								</div>
+							</div>
+							<div class="first_box clearfix">
+								<div class="before">
+									<a href="#"><img src="static/images/index/list06.png" /></a>
+									<p>Y73全面屏 3GB+32GB-三色可选</p>
+									<p>性价比超值推荐</p>
+									<p>￥799.00</p>
+								</div>
+								<div class="later">
+									<a href="#"><img src="static/images/index/list06.png" /></a>
+									<p>Y73全面屏 3GB+32GB-香槟金</p>
+									<ul>
+										<a href="#" style="background: #eae1db;"></a>
+										<a href="#" style="background: #c00000;"></a>
+										<a href="#" style="background: #000000;"></a>
+									</ul>
+									<p>￥799.00</p>
+								</div>
+							</div>
+							<div class="first_box clearfix">
+								<div class="before">
+									<a href="#"><img src="static/images/index/list07.png" /></a>
+									<p>Z3全面屏 4GB+64GB-3色可选</p>
+									<p>高通骁龙670AIE处理器</p>
+									<p>￥1598.00</p>
+								</div>
+								<div class="later">
+									<a href="#"><img src="static/images/index/list07.png" /></a>
+									<p>Z3全面屏 4GB+64GB-极光蓝</p>
+									<ul>
+										<a href="#" style="background: #040519;"></a>
+										<a href="#" style="background: #e5b9b7;"></a>
+										<a href="#" style="background: #000000;"></a>
+									</ul>
+									<p>￥1598.00</p>
+								</div>
+							</div>
+							<div class="first_box clearfix">
+								<div class="before">
+									<a href="#"><img src="static/images/index/list08.png" /></a>
+									<p>Z1青春版 4GB+32GB-3色可选</p>
+									<p>高通骁龙八核处理器</p>
+									<p>￥1098.00</p>
+								</div>
+								<div class="later">
+									<a href="#"><img src="static/images/index/list08.png" /></a>
+									<p>Z1青春版 4GB+32GB-极光色</p>
+									<ul>
+										<a href="#" style="background: #5a0878;"></a>
+										<a href="#" style="background: #c00000;"></a>
+										<a href="#" style="background: #000000;"></a>
+									</ul>
+									<p>￥1098.00</p>
+								</div>
+							</div>
+							<div class="first_box clearfix">
+								<div class="before">
+									<a href="#"><img src="static/images/index/list09.png" /></a>
+									<p>X21i全面屏 6GB+64GB-极夜黑</p>
+									<p>直降200元|Jovi人工智能</p>
+									<p>￥2198.00</p>
+								</div>
+								<div class="later">
+									<a href="#"><img src="static/images/index/list09.png" /></a>
+									<p>X21i全面屏 6GB+64GB-极夜黑</p>
+									<ul>
+										<a href="#" style="background: #000000;"></a>
+									</ul>
+									<p>￥2198.00</p>
+								</div>
+							</div>
+							<div class="first_box clearfix">
+								<div class="before">
+									<a href="#"><img src="static/images/index/list10.png" /></a>
+									<p>Y83全网通 4GB+32GB-3色可选</p>
+									<p>AI美颜自拍|Jovi人工智能</p>
+									<p>￥990.00</p>
+								</div>
+								<div class="later">
+									<a href="#"><img src="static/images/index/list10.png" /></a>
+									<p>Y83全网通 4GB+32GB-极夜黑</p>
+									<ul>
+										<a href="#" style="background: #000000;"></a>
+										<a href="#" style="background: #e5b9b7;"></a>
+										<a href="#" style="background: #D5D5D5;"></a>
+									</ul>
+									<p>￥999.00</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				<div class="top">
+					<b>精品配件</b>
+					<a href="#">充电</a>
+					<a href="#">配件</a>
+					<a href="#">音乐</a>
+					<a href="#">更多<i class="iconfont icon-k-yjt"></i></a>
+				</div>	
+				<div class="third_list">
+					<div class="third">
+						<div class="first_box clearfix">
+							<div class="before">
+								<a href="#"><img src="static/images/index/list10.png" /></a>
+								<p>Y83全网通 4GB+32GB-3色可选</p>
+								<p>AI美颜自拍|Jovi人工智能</p>
+								<p>￥990.00</p>
+							</div>
+							<div class="later">
+								<a href="#"><img src="static/images/index/list10.png" /></a>
+								<p>Y83全网通 4GB+32GB-极夜黑</p>
+								<ul>
+									<a href="#" style="background: #000000;"></a>
+									<a href="#" style="background: #e5b9b7;"></a>
+									<a href="#" style="background: #D5D5D5;"></a>
+								</ul>
+								<p>￥999.00</p>
+							</div>
+						</div>
+						<div class="first_box clearfix">
+							<div class="before">
+								<a href="#"><img src="static/images/index/list10.png" /></a>
+								<p>Y83全网通 4GB+32GB-3色可选</p>
+								<p>AI美颜自拍|Jovi人工智能</p>
+								<p>￥990.00</p>
+							</div>
+							<div class="later">
+								<a href="#"><img src="static/images/index/list10.png" /></a>
+								<p>Y83全网通 4GB+32GB-极夜黑</p>
+								<ul>
+									<a href="#" style="background: #000000;"></a>
+									<a href="#" style="background: #e5b9b7;"></a>
+									<a href="#" style="background: #D5D5D5;"></a>
+								</ul>
+								<p>￥999.00</p>
+							</div>
+						</div>
+						<div class="first_box clearfix">
+							<div class="before">
+								<a href="#"><img src="static/images/index/list10.png" /></a>
+								<p>Y83全网通 4GB+32GB-3色可选</p>
+								<p>AI美颜自拍|Jovi人工智能</p>
+								<p>￥990.00</p>
+							</div>
+							<div class="later">
+								<a href="#"><img src="static/images/index/list10.png" /></a>
+								<p>Y83全网通 4GB+32GB-极夜黑</p>
+								<ul>
+									<a href="#" style="background: #000000;"></a>
+									<a href="#" style="background: #e5b9b7;"></a>
+									<a href="#" style="background: #D5D5D5;"></a>
+								</ul>
+								<p>￥999.00</p>
+							</div>
+						</div>
+						<div class="first_box clearfix">
+							<div class="before">
+								<a href="#"><img src="static/images/index/list10.png" /></a>
+								<p>Y83全网通 4GB+32GB-3色可选</p>
+								<p>AI美颜自拍|Jovi人工智能</p>
+								<p>￥990.00</p>
+							</div>
+							<div class="later">
+								<a href="#"><img src="static/images/index/list10.png" /></a>
+								<p>Y83全网通 4GB+32GB-极夜黑</p>
+								<ul>
+									<a href="#" style="background: #000000;"></a>
+									<a href="#" style="background: #e5b9b7;"></a>
+									<a href="#" style="background: #D5D5D5;"></a>
+								</ul>
+								<p>￥999.00</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			</div>
+		</div>
+		<div class="footer_wrapper">
+			<script>
+				$('.footer_wrapper').load("common/footer.html");
+			</script>
+		</div>
+ 	</body>
+</html>

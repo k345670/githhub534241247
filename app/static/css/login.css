@@ -34,6 +34,11 @@ body{
 	height:60px!important;
 	border-color: #ccc!important;
 		}
+.box p{
+	background: #FFFFFF;
+	font-size: 14px;
+	margin-top: 10px;
+}
 .box .send{
 	width: 400px;
 	height: 60px;
@@ -46,12 +51,12 @@ body{
 .code{
 	position: relative;
 }
-#codebtn{
+.code .codebtn{
 	position: absolute;
 	height: 40px!important;
 	width: 100px!important;
 	top: 30px;
-	background: #fff;
+	background: transparent;
 	border:0;
 	color:#056BE8;
 	right: 2px;
