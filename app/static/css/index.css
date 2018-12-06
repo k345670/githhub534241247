@@ -168,7 +168,12 @@
 	font-size: 24px;
 	color: #000000;
 }
-.module .top a{
+.module .top:nth-child(1) a{
+	font-size: 14px;
+	float: right;
+	color: #000000;
+}
+.module .top:nth-child(3) a{
 	font-size: 14px;
 	float: right;
 	color: #000000;
@@ -195,21 +200,6 @@
 }
 .main .first_list .first_box:nth-child(2){
 	margin: 0 16px;
-}
-.main .first_list .first_box:nth-child(2) .later ul a{
-	background: #0f243e;
-}
-.main .first_list .first_box:nth-child(2) .later ul a:nth-child(2){
-	background: #e5b9b7;
-}
-.main .first_list .first_box:nth-child(2) .later ul a:nth-child(3){
-	background: #0c0c0c;
-}
-.main .first_list .first_box:nth-child(3) .later ul a{
-	background: #0c0c0c;
-}
-.main .first_list .first_box:nth-child(3) .later ul a:nth-child(2){
-	background: red;
 }
 .main .first_box p{
 	line-height: 50px;
@@ -240,8 +230,19 @@
 .main .module .first_box:hover .later{
 	display: block;
 }
+.main .module .first_box .later ul a:nth-child(1){
+	border: 1px solid #888888;
+}
+.main .module .first_box:hover .later ul a{
+	transform: translate3d(0,-2px,0);
+	box-shadow: 3px 15px 30px rgba(0,0,2,.1);;
+	transition: 0.5s all linear;
+}
+/*.main .module .first_box:hover .later ul a:hover{
+	border:1px solid #DEDEDE;
+}*/
 .module .second_list{
-	height: 600px;
+	height: 835px;
 }
 .module .second_list .second{
 	float: left;
@@ -298,6 +299,15 @@
 .main .second_list .first_box p:nth-child(4){
 	font-size: 16px;
 	margin-top: 10px;
+}
+.module .top:nth-child(5) .left a{
+	font-size: 14px;
+	color: #000000;
+}
+.main .third_list .first_box{
+	width: 24.4%;
+	margin-right: 10px;
+	margin-bottom: 10px;
 }
 
 

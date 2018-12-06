@@ -1,0 +1,22 @@
+{
+  "name": "vivo",
+  "version": "1.0.0",
+  "description": "This is my first project about vivo  Please give me more advice\r 这是一个关于手机等一系列电子产品的电商网站\r 登录页/注册/首页/列表页/详情页/购物车",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/k345670/vivo.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/k345670/vivo/issues"
+  },
+  "homepage": "https://github.com/k345670/vivo#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  }
+}
