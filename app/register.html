@@ -1,49 +1,53 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="UTF-8">
-		<title></title>
-		<link rel="stylesheet" type="text/css" href="static/css/reset.css"/>
-		<link rel="stylesheet" type="text/css" href="static/css/register.css"/>
-		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-	</head>
-	<body>
-		<div class="register_wrapper">
-			<div class="register">
-				<a href="#"><img src="static/images/register/logo.png" /></a>
-				<div class="box">
-					<form action="../server/php/register.php" method="get" autocomplete="on">
-							<span class="top">账号登录</span>
-							<div class="form-group has-success code">
-							  	<label for="username"></label>
-							  	<input type="text" class="form-control" id="username" name="username" placeholder="手机号/邮箱/用户名" data-error="请输入正确的手机号">
-								<p class=""></p>
-							</div>
-							<div class="form-group has-success code">
-							  	<label for="password"></label>
-							  	<input type="text" class="form-control" name="password"  placeholder="密码" data-error="密码正确">
-							  	<p class=""></p>
-							</div>
-							<span class="hint"><img src="static/images/register/uncheck.png" />两周内自动登录</span>
-							<a href="#" class="title">忘记密码 ?</a>
-							<button  name="submit" class="send" value="注册">登录</button>
-							<button  name="codebtn" class="codebtn" value="获取验证码">注册vivo账号</button>
-					</form>
-					<div class="list">
-						<p>其他方式登录</p>
-						<a href="#"><img src="static/images/register/qq.png" /></a>
-						<a href="#"><img src="static/images/register/weixin.png" /></a>
-						<a href="#"><img src="static/images/register/zhifubao.png" /></a>
-						<a href="#"><img src="static/images/register/sina.png" /></a>
-						<a href="#"><img src="static/images/register/renren.png" /></a>
+
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="static/css/reset.css" />
+	<link rel="stylesheet" type="text/css" href="static/css/register.css" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+	 crossorigin="anonymous">
+</head>
+
+<body>
+	<div class="register_wrapper">
+		<div class="register">
+			<a href="#"><img src="static/images/register/logo.png" /></a>
+			<div class="box">
+				<form action="../server/php/register.php" method="get" autocomplete="on">
+					<span class="top">账号登录</span>
+					<div class="form-group has-success code">
+						<label for="username"></label>
+						<input type="text" class="form-control" id="username" name="username" placeholder="手机号/邮箱/用户名" data-error="请输入正确的手机号">
+						<p class=""></p>
 					</div>
+					<div class="form-group has-success code">
+						<label for="password"></label>
+						<input type="text" class="form-control" name="password" placeholder="密码" data-error="密码正确">
+						<p class=""></p>
+					</div>
+					<span class="hint"><img src="static/images/register/uncheck.png" />两周内自动登录</span>
+					<a href="#" class="title">忘记密码 ?</a>
+					<button name="submit" class="send" value="注册">登录</button>
+					<button name="codebtn" class="codebtn" value="获取验证码">注册vivo账号</button>
+				</form>
+				<div class="list">
+					<p>其他方式登录</p>
+					<a href="#"><img src="static/images/register/qq.png" /></a>
+					<a href="#"><img src="static/images/register/weixin.png" /></a>
+					<a href="#"><img src="static/images/register/zhifubao.png" /></a>
+					<a href="#"><img src="static/images/register/sina.png" /></a>
+					<a href="#"><img src="static/images/register/renren.png" /></a>
 				</div>
 			</div>
 		</div>
-		<div class="footer">
-			<a href="#"><img src="static/images/login/online-service.png" />在线客服</a>
-			<a href="#"><img src="static/images/login/tel.png" />400-678-9688(24小时全国服务热线)</a>
-			<span>COPYRIGHT © 1996-2017  ALLRIGHTS RESERVED.粤ICP备05100288号</span>
-		</div>
-	</body>
+	</div>
+	<div class="footer">
+		<a href="#"><img src="static/images/login/online-service.png" />在线客服</a>
+		<a href="#"><img src="static/images/login/tel.png" />400-678-9688(24小时全国服务热线)</a>
+		<span>COPYRIGHT © 1996-2017 ALLRIGHTS RESERVED.粤ICP备05100288号</span>
+	</div>
+</body>
+
 </html>
