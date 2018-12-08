@@ -394,6 +394,78 @@ body{
 	line-height: 82px;
 	border-top:1px solid #EBEBEB;
 	margin-top: 110px;
+	display: flex;
+	justify-content: space-between;
+	position: relative;
+	font-size: 12px;
+}
+.footer-copyright .footer_icon{
+	display: flex;
+}
+.footer-copyright .footer_icon .icon_left{
+	margin-right: 45px;	
+}
+.footer-copyright .footer_icon .icon_left ul{
+	position: absolute;
+	bottom: 65px;
+	right: 50px;
+	width: 130px;
+	box-sizing: border-box;
+	padding: 20px 0;
+	box-shadow: 0 15px 30px rgba(0,0,0,.1);
+	opacity: 0;
+}
+.footer-copyright .footer_icon .icon_left ul li{
+	font-size: 16px;
+	box-sizing: border-box;
+	width: 130px;
+	padding: 0 20px;
+	line-height: 40px;
+	color: #CCCCCC;
+}
+.footer-copyright .footer_icon .icon_left ul li i{
+	display: inline-block;
+	background: url(../images/index/icons.png) no-repeat;
+	background-position: -1px -166px;
+	width: 21px;
+	height: 17px;
+	margin-right: 18px;
+}
+.footer-copyright .footer_icon .icon_left ul li:nth-child(2) i{
+	background-position: 0px -125px;
+}
+.footer-copyright .footer_icon .icon_left ul li:nth-child(3) i{
+	background-position: 0px -89px;
+}
+.footer-copyright .footer_icon .icon_left ul li:hover{
+	background:#DDDDDD;
+	transition: all .3s ease-out;
+	color: #000000;
+}
+.footer-copyright .footer_icon .icon_left:hover ul{
+	opacity: 1;
+	height: 160px;
+	transition: all 1s ease-out;
+}
+.footer-copyright .footer_icon .icon_left ul li:nth-child(1):hover i{
+	background-position: -36px -167px;
+	color: #000000;
+}
+.footer-copyright .footer_icon .icon_left ul li:nth-child(2):hover i{
+	background-position: -36px -127px;
+	color: #000000;
+}
+.footer-copyright .footer_icon .icon_left ul li:nth-child(3):hover i{
+	background-position: -36px -88px;
+	color: #000000;
+}
+.footer-copyright .footer_icon .icon_left ul li span{
+	display: block;
+	position: absolute;
+	right: 180px;
+	width: 130px;
+	height: 160px;
 }
 /*底部结束*/
+
 

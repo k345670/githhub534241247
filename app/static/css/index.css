@@ -5,7 +5,7 @@
     top: 33px;
     left: 110px;
     z-index: 50;
-    background: #A8A8A8;
+    background: #DFDFDF;
 }
 .swiper-container .banner_nav .listone>a{
     display: flex;
@@ -25,7 +25,7 @@
     line-height: 65px;
     font-size: 14px;
 }
-.swiper-container .banner_nav .listone:hover .nav_list{
+.swiper-container .banner_nav .listone:hover .nav_border{
 	display: block;
 }
 .swiper-container .banner_nav .listone:hover a{
@@ -36,14 +36,16 @@
 	height: 470px;
 }
 .banner_nav .listone .nav_list{
-	position: absolute;
-	left: 250px;
-	top: 0;
 	width: 800px;
-	height: 455px;
-	background: #fff;
-	box-sizing: border-box;
+	height: 485px;
 	padding: 0 30px;
+	background: #fff;
+}
+.banner_nav .listone .nav_border{
+	position: absolute;
+	left: 220px;
+	top: 0;
+	border-left: 14px solid transparent;
 	display: none;
 }
 .banner_nav .listone .nav_list h2 {
@@ -72,6 +74,7 @@
 	width: 182px;
 	background: url(../images/index/title01.jpg) no-repeat;
 	background-size: 182px 55px;
+	border-radius: 12px;
 }
 .swiper-container .banner_nav .listone .nav_list .list_title li a:nth-child(2){
 	background: url(../images/index/title03.jpg) no-repeat;
@@ -84,6 +87,9 @@
 .swiper-container .banner_nav .listone .nav_list .list_title li a:nth-child(4){
 	background: url(../images/index/title04.png) no-repeat;
 	background-size: 182px 55px;
+}
+.swiper-container .banner_nav .listone:hover .nav_list .list_title li a:hover{
+	box-shadow: inset 190px 0px 0px 0px rgba(0,0,0,.1);
 }
 .swiper-container .banner_nav .listone .nav_list .list_details{
 	margin-top: 40px;
@@ -136,7 +142,7 @@
 	left: 310px;
 }
 .main{
-    height: 4000px;
+    height: 2760px;
 }
 .main .top_list ul{
 	display: flex;
@@ -152,7 +158,7 @@
 }
 .main .top_list ul li:hover{
 	transform: translate3d(0,-2px,0);
-	box-shadow: 0 15px 30px rgba(0,0,0,.1);;
+	box-shadow: 0 15px 30px rgba(0,0,0,.1);
 	transition: 0.5s all linear;
 }
 .module .first_list{
@@ -309,5 +315,49 @@
 	margin-right: 10px;
 	margin-bottom: 10px;
 }
-
-
+.shift_nav{
+	width: 60px;
+	position: fixed;
+	right: 0;
+	bottom: 50px;
+	z-index: 50;
+}
+.shift_nav li a{
+	display: block;
+	background: #fff;
+	width: 100%;
+	height: 60px;
+	text-align: center;
+	line-height: 60px;
+}
+.shift_nav li a i{
+	font-size:26px;
+	color: #252525;
+}
+.shift_nav .prompt_border{
+	position: fixed;
+	right: 60px;
+	bottom: 50px;
+	display: none;
+	border-right: 10px solid transparent;
+}
+.shift_nav .prompt{
+	background: #fff;
+	width: 120px;
+	height: 60px;
+	line-height: 60px;
+	text-align: center;
+	font-size: 16px;
+}
+.shift_nav ul li:hover a{
+	background: #ebebeb;
+}
+.shift_nav ul li:hover a i{
+	color: #f51919;
+}
+.shift_nav ul li:hover .prompt_border{
+	display: block;
+}
+.shift_nav .getTop{
+	opacity: 0;
+}
