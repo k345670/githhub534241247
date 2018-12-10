@@ -1,4 +1,7 @@
 
+.swiper-container{
+	z-index: 10!important;
+}
 .swiper-container .banner_nav{
 	position: absolute;
     width: 220px;

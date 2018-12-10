@@ -41,77 +41,70 @@ body{
 	height: 35px;
 	margin-top: 10px;
 	overflow: hidden;
+	border-left: 1px solid transparent;
 }
 .nav .bg{
 	display: none;
-	height: 0;
-	z-index: 10;
+	height: 7;
+	z-index: 7;
 	position: absolute;
 	width: 4000px;
 	top: 45px;
 	left: -50px;
 }
-.nav .bg .list1{
+.nav .conmn{
 	background: #2f2f2f;
 	position: absolute;
-	z-index: 102;
-	left: 356.5px;
+	z-index:9;
 	width: 200px;
 	height: 200px;
+	display: none;
 }
-.nav .bg .list2{
-	background: #2f2f2f;
-	z-index: 50;
-	position: absolute;
-	left: 449px;
-	width: 200px;
-	height: 200px;
+.nav .list1{
+	left: 305.5px;
 }
-.nav .bg .list3{
-	background: #2f2f2f;
-	z-index: 50;
-	position: absolute;
-	left: 542.5px;
-	width: 200px;
-	height: 200px;
+.nav .list2{
+	left: 399px;
 }
-.nav .bg .list4{
-	background: #2f2f2f;
-	z-index: 50;
-	position: absolute;
-	left: 635.5px;
-	width: 200px;
-	height: 200px;
+.nav .list3{
+	left: 493.5px;
+}
+.nav .list4{
+	left: 587.5px;
 }
 .nav .conmn li a{
 	display: block;
 	width: 200px;
 	height: 25px;
 	text-align: left;
-	padding-left: 32px;
+	padding-left: 20px;
 	line-height: 25px;
 }
 .nav .bg .list1 a{
 	padding-left: 20px;
 }
-.nav ul:hover{
+.nav>ul:hover{
 	transition: all 1s ease;
 	border-left: 1px solid #CCCCCC;
 }
-.nav .center:hover{
-	border: 0;
+.nav>ul:hover .wrap{
+	z-index: 13;
+	/*display: block;*/
+	opacity: 1;
+	transition: all .5s ease-in-out
 }
-.nav ul:hover .wrap{
+.nav>ul:hover .bg{
 	display: block;
-}
-.nav ul:hover .bg{
-	display: block;
+	z-index: 12;
 	background: #2f2f2f;
 	transition: all 1s ease;
 	height: 220px;
 	margin-left:-1px;
 }
-.nav ul:hover .bg .conmn{
+.nav>ul:hover .conmn{
+	z-index: 15;
+	display: block;
+	transition: all 2s ease;
 	border-left: 1px solid #CCCCCC;
 }
 .nav ul li>a{
@@ -134,8 +127,9 @@ body{
 	position: absolute;
 	transform-style: preserve-3d;
 	height: 100%;
-	z-index: 101;
-	display: none;
+	z-index: 8;
+	/*display: none;*/
+	opacity: 0;
 }
 .box01{
 	width:70px;
@@ -159,7 +153,6 @@ body{
 	position: absolute;
 	top:18px;
 	left: 0;
-	z-index: 2;
 }
 .box02{
 	width:100px;
@@ -172,7 +165,6 @@ body{
 	transform: matrix(1, 0, 0, 1, 0, -25);
 	animation: go 3s linear infinite;
 	opacity: 0.7;
-	z-index: 2;
 }
 .box02 span{
 	display: block;
@@ -183,7 +175,6 @@ body{
 	position: absolute;
 	top:67px;
 	left: 0;
-	z-index: 2;
 }
 .box03{
 	width:150px;
@@ -196,7 +187,6 @@ body{
 	opacity: 0.8;
 	/*transform: matrix(1, 0, 0, 1, 267.273, 0);*/
 	animation: x 4s linear infinite;
-	z-index: 2;
 }
 .box03 span{
 	display: block;
@@ -207,7 +197,6 @@ body{
 	position: absolute;
 	top:45px;
 	left: 0;
-	z-index: 2;
 }
 .box04{
 	width:170px;
@@ -220,7 +209,7 @@ body{
 	animation: go 5s linear infinite;
 	transform: matrix(1, 0, 0, 1, 267.273, 0);
 	opacity: 0.9;
-	z-index: 2;
+
 }
 .box04 span{
 	display: block;
@@ -231,21 +220,20 @@ body{
 	position: absolute;
 	top:46px;
 	left: 0;
-	z-index: 2;
 }
 @keyframes x{
-	0%{transform: rotateZ(0deg) rotateZ(0deg);}
-	100%{transform: rotateZ(0deg) rotateZ(360deg);}
+	0%{transform: rotateZ(0deg);}
+	100%{transform: rotateZ(720deg);}
 }
 @keyframes go{
-	0%{transform: rotateZ(0deg) rotateZ(0deg);}
-	100%{transform: rotateZ(0deg) rotateZ(360deg);}
+	0%{transform:  rotateZ(0deg);}
+	100%{transform:  rotateZ(360deg);}
 }
 /*搜索主页框*/
 .header_left a{
 	float: left;
 	display: block;
-	width: 65px;
+	width: 64px;
 	line-height: 55px;
 	text-align: center;
 	margin-left: 20px;

@@ -1,11 +1,11 @@
 <?php
     header("content-type:text/html;charset=utf-8");
-	
+	header('Access-Control-Allow-Origin:*');
 	$tel = $_POST['tel'];
 
 	//服务器进入方式不同
-	$coon = new mysqli('localhost','root','root','vivo_admin');
-	// $coon = new mysqli('localhost','root','','vivo_admin',3306);
+//	$coon = new mysqli('localhost','root','root','vivo_admin');
+	 $coon = new mysqli('localhost','root','','vivo_admin',3306);
 	$sql = "SELECT tel from vivo_user_info where tel='$tel'";
 	// $sql="INSERT INTO `vivo_user_info`(`tel`,`password`) VALUES('$tel','$password')";
 	

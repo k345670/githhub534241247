@@ -1,12 +1,13 @@
 <?php	
 	header("content-type:text/html;charset=utf-8");
+	header('Access-Control-Allow-Origin:*');
 	
 	$tel = $_POST['tel'];
 	
 	$password = $_POST['password'];
 	//服务器进入方式不同
-	$coon = new mysqli('localhost','root','root','vivo_admin');
-	// $coon = new mysqli('localhost','root','','vivo_admin',3306);
+//	$coon = new mysqli('localhost','root','root','vivo_admin');
+	 $coon = new mysqli('localhost','root','','vivo_admin',3306);
 	$sql = "INSERT INTO vivo_user_info(tel,password) VALUES ('$tel','$password')";
 	// $sql="INSERT INTO `vivo_user_info`(`tel`,`password`) VALUES('$tel','$password')";
 	
@@ -18,9 +19,7 @@
 	// var_dump($row);
 	if($row){
 		// echo "aleart('你大爷')";
-		echo "<script>alert('恭喜您，注册成功!');location.href='../../app/register.html'</script>";
-	}else{
-		echo "<script>alert('不好意思，您注册失败');location.href='login.html'</script>";
+		echo "<script>location.href='../../app/register.html'</script>";
 	}
 
 	// if($row){

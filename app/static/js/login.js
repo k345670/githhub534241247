@@ -31,7 +31,7 @@ var getInput = (function () {
 					} else {
 						var flage = checkInp[this.name](this.value);
 						if (flage) {
-							$p.className = 'bg-success text-success';
+							$p.className = 'text-success';
 							$p.innerHTML = '';
 						} else {
 							$p.className = 'bg-danger text-danger';
@@ -42,7 +42,13 @@ var getInput = (function () {
 			}
 			var $send = this.$ele.querySelector('.send')
 			$send.onclick = function () {
+				var $span = _this.$ele.querySelector('#change');
 				var $pAll = _this.$ele.querySelectorAll('p');
+				var $tel = document.getElementById("tel");
+				if($span.className.indexOf('text-success') == -1){
+					$tel.focus();
+					return false;
+				}
 				for (let i = 0; i < $pAll.length; i++) {
 					if ($pAll[i].className.indexOf('text-success') == -1) {
 						$pAll[i].previousElementSibling.focus();
