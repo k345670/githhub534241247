@@ -11,11 +11,14 @@ function sendAjax(url, obj) {
 	}
 	//建一个新对象用来防止用户输入的对象属性有误
 	//更改默认值
-	for (var i in _default) {
-		if (i in obj) {
-			_default[i] = obj[i];
+	if (obj) {
+		for (var i in _default) {
+			if (i in obj) {
+				_default[i] = obj[i];
+			}
 		}
 	}
+
 	//判断类型
 	if (_default.method.toUpperCase() === "GET") {
 		//get中的地址拼接

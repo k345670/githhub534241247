@@ -25,19 +25,78 @@ body{
 	height: 760px;
 	position: absolute;
 }
-.shop_main .shop_left ul li{
+.shop_main .shop_left .f_left{
+	height: 503px;
 	position: absolute;
 	top: 70px;
 	left: 20px;
+	width: 500px;
+}
+.shop_main .shop_left ul li{
+	position: absolute;
+	top: 0px;
+	left: 0px;
 	display: none;
+	/* border: 1px solid black; */
 }
 .shop_main .shop_left ul li img{
 	width:500px;
 	height:500px;
 }
+
+.shop_main .shop_left .f_right{
+	position: absolute;
+	width: 500px;
+	height: 500px;
+	top: 70px;
+	left: 525px;
+	/* border: 1px solid black; */
+	z-index: 10;
+	display: none;
+}
+.shop_main .shop_left .f_right li{
+	position: absolute;
+	width: 500px;
+	height: 500px;
+	top: 0px;
+	left: 0px;
+	display: none;
+}
+.shop_main .shop_left .f_right li img{
+	/* background-size: 200% 200%; */
+	width: 1300px;
+	height: 1300px;
+	background-position: center;
+
+}
+.shop_main .shop_left .f_right ._datu{
+	display: block;
+	/* position: absolute; */
+	overflow: hidden;
+	/* top: 0; */
+	/* left: 0; */
+}
+.shop_main .shop_left .f_right ._datu img{
+	position: absolute;
+	top: 0;
+	left: 0;
+
+}
+.shop_main .shop_left .f_left ._xuan{
+	width: 193px;
+	height: 193px;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	background: #ccc;
+	opacity: 0.4;
+	display: none;
+
+}
+
 .shop_main .shop_left .ol_list{
 	width: 340px;
-	border: 1px solid #000000;
+	/* border: 1px solid #000000; */
 	height: 92px;
 	position: absolute;
 	top: 630px;
@@ -46,9 +105,15 @@ body{
 }
 .shop_main .shop_left ol{
 	width: 500px;
+	position: absolute;
+	top: 0;
+	left: 0px;
 }
 .shop_main .shop_left ol li{
 	float: left;
+	/* position: absolute;
+	top: 0;
+	left: 0; */
 }
 .shop_main .shop_left ol li img{
 	width:85px;
@@ -280,8 +345,8 @@ body{
     color: white;
     width: 20px;
     height: 20px;
-    /*border-radius: 50%;*/
-    /*background: #FFD700;*/
+    border-radius: 50%;
+    background: #FFD700;
     }*/
 input[type="checkbox"]:checked + label::before {
     content: "\2713";
@@ -350,7 +415,7 @@ input[type=checkbox]{
 	height: 100%;
 }
 .main .main_top{
-	width: ;
+	/* width: ; */
 	height: 80px;
 	line-height: 80px;
 }

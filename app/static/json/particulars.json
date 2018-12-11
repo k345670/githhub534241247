@@ -1,0 +1,20 @@
+{
+    "code": "0",
+    "data": [
+        {
+            "id": 1,
+            "ac1": "static/images/particulars/left_big01.png",
+            "ac2": "static/images/particulars/left_big02.png",
+            "ac3": "static/images/particulars/left_big03.png",
+            "ac4": "static/images/particulars/left_big04.png",
+            "ac5": "static/images/particulars/left_big05.png",
+            "xt1": "static/images/particulars/left_mini01.png",
+            "xt2": "static/images/particulars/left_mini02.png",
+            "xt3": "static/images/particulars/left_mini03.png",
+            "xt4": "static/images/particulars/left_mini04.png",
+            "xt5": "static/images/particulars/left_mini05.png",
+            "min-price": "￥4298",
+            "max-price": "￥4498"
+        }
+    ]
+}

@@ -6,8 +6,8 @@
 	
 	$password = $_POST['password'];
 	//服务器进入方式不同
-//	$coon = new mysqli('localhost','root','root','vivo_admin');
-	 $coon = new mysqli('localhost','root','','vivo_admin',3306);
+	$coon = new mysqli('localhost','root','root','vivo_admin');
+	//  $coon = new mysqli('localhost','root','','vivo_admin',3306);
 	$sql = "INSERT INTO vivo_user_info(tel,password) VALUES ('$tel','$password')";
 	// $sql="INSERT INTO `vivo_user_info`(`tel`,`password`) VALUES('$tel','$password')";
 	
@@ -18,7 +18,6 @@
 	$row=$coon -> query($sql);
 	// var_dump($row);
 	if($row){
-		// echo "aleart('你大爷')";
 		echo "<script>location.href='../../app/register.html'</script>";
 	}
 
