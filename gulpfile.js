@@ -11,9 +11,11 @@ var connect = require('gulp-connect');//建立服务器
 var livereload = require('gulp-livereload');//自动刷新
 var rev = require('gulp-rev');//添加哈希编码
 var del = require('del');//删除
-var runSequence = require('run-sequence')
-var collector = require('gulp-rev-collector');
-gulp.task('default',['watch','miniHtml','miniJs','miniCss','connect']);
+var runSequence = require('run-sequence')//异步执行
+var collector = require('gulp-rev-collector');//更改路径
+var sass = require('gulp-sass');
+sass.compiler = require('node-sass');
+gulp.task('default',['watch','connect','miniHtml','miniJs','miniCss','sass']);
 gulp.task('miniCss', function(){
 	gulp.src('app/**/*.css')
 //		.pipe(minify())
@@ -56,8 +58,17 @@ gulp.task('concat', function(){
 		.pipe(concat('all.js'))
 		.pipe(gulp.dest('concat'))
 });//合并文件
+gulp.task('sass', function () {
+	 gulp.src('app/static/sass/*.scss')
+    .pipe(sass().on('error', sass.logError))
+    .pipe(gulp.dest('dist/static/css'))
+    .pipe(connect.reload());
+});
 gulp.task('watch', function(){
-	gulp.watch('app/**/*.html' ,['miniHtml'])
+	gulp.watch('app/**/*.html',['miniHtml'])
+	gulp.watch('app/**/*.css',['miniCss'])
+	gulp.watch('app/**/*.js',['miniJs'])
+	gulp.watch('app/staic/sass/.scss',['sass'])
 })//开启监听
 gulp.task('connect', function(){
 	connect.server({

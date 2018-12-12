@@ -313,7 +313,7 @@ body{
 	height: 18px;
 	margin-top: 4px;
 	margin-right:4px;
-	background: url(../images/index/icons.png) no-repeat;
+	background: url(../images/home/icons.png) no-repeat;
 }
 .footer_top ul li:nth-child(1) a i{
 	background-position:-2px -49px;
@@ -413,7 +413,7 @@ body{
 }
 .footer-copyright .footer_icon .icon_left ul li i{
 	display: inline-block;
-	background: url(../images/index/icons.png) no-repeat;
+	background: url(../images/home/icons.png) no-repeat;
 	background-position: -1px -166px;
 	width: 21px;
 	height: 17px;
@@ -453,6 +453,53 @@ body{
 	right: 180px;
 	width: 130px;
 	height: 160px;
+}
+/*回到顶部*/
+.shift_nav{
+	width: 60px;
+	position: fixed;
+	right: 0;
+	bottom: 50px;
+	z-index: 50;
+}
+.shift_nav li a{
+	display: block;
+	background: #fff;
+	width: 100%;
+	height: 60px;
+	text-align: center;
+	line-height: 60px;
+}
+.shift_nav li a i{
+	font-size:26px;
+	color: #252525;
+}
+.shift_nav .prompt_border{
+	position: fixed;
+	right: 60px;
+	bottom: 50px;
+	display: none;
+	border-right: 10px solid transparent;
+}
+.shift_nav .prompt{
+	background: #fff;
+	width: 120px;
+	height: 60px;
+	line-height: 60px;
+	text-align: center;
+	font-size: 16px;
+}
+.shift_nav ul li:hover a{
+	background: #ebebeb;
+}
+.shift_nav ul li:hover a i{
+	color: #f51919;
+}
+.shift_nav ul li:hover .prompt_border{
+	display: block;
+}
+.shift_nav .getTop{
+	opacity: 0;
 }
 /*底部结束*/
 

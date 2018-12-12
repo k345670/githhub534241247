@@ -7,6 +7,54 @@
 			<li><a href="#"><i></i>全国网点售后</a></li>
 		</ul>
 	</div>
+	<div class="shift_nav">
+		<ul>
+			<li><a href="#"><i class="iconfont icon-k-gwc"></i></a>
+				<div class="prompt_border" style="bottom: 230px;">
+					<div class="prompt">购物车</div>
+				</div>
+			</li>
+			<li><a href="#"><i class="iconfont icon-k-wm"></i></a>
+				<div class="prompt_border" style="bottom: 170px;">
+					<div class="prompt">小V客服</div>
+				</div>
+			</li>
+			<li><a href="#"><i class="iconfont icon-wh"></i></a>
+				<div class="prompt_border" style="bottom: 110px;">
+					<div class="prompt">帮助中心</div>
+				</div>
+			</li>
+			<li class="getTop"><a href="javascrip:;"><i class="iconfont icon-k-sjt"></i></a>
+				<div class="prompt_border">
+					<div class="prompt" style="opacity: 1;">回到顶部</div>
+				</div>
+				<script>
+					var $top = $('.getTop');
+					var timer = null;
+					$(window).scroll(function(){
+						var $height = $(window).scrollTop();
+						if($height > 300){
+							$top.css('opacity','1');
+							}else{
+								$top.css('opacity','0');
+								console.log(2);
+							}
+					})
+					$top.click(function(){
+							timer = setInterval(function(){
+							var $height = $(window).scrollTop();
+							$height -= 50;
+							if($height < 0){
+								$height = 0;
+								clearInterval(timer);
+							}
+							$(window).scrollTop($height);
+						},20)
+					})
+				</script>
+			</li>
+		</ul>
+	</div>
 	<div class="footer-nav">
 		<ul>
 			<li>
