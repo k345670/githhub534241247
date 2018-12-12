@@ -1,5 +1,5 @@
 <?php
- header('Access-Control-Allow-Origin:*');
+ header("Access-Control-Allow-Origin:*");
  header("content-type:text/html;charset=utf-8");
 
  $username = $_POST['username'];
@@ -23,7 +23,9 @@
 
      if($row["password"] == $password){
         //  echo 1;
-         echo "<script>alert('恭喜您，登陆成功！');location.href='../../app/home.html'</script>";
+         echo "<script>alert('恭喜您，登陆成功！');
+        // cookie.setItem('$username', '', 30);
+         location.href='../../app/home.html'</script>";
      }else{
          echo "<script>alert('密码错误，请查证后再输！')</script>";
      }
