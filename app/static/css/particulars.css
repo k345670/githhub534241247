@@ -1,9 +1,12 @@
 body{
 	background: #fff;
 }
+.shop{
+	z-index: 10;
+}
 .shop_top{
-	height: 20px;
-	line-height: 70px;
+	height: 50px;
+	line-height: 50px;
 }
 .shop_top a{
 	font-size: 14px;
@@ -412,7 +415,7 @@ input[type=checkbox]{
 }
 .main_wrapper{
 	border-top: 1px solid #DDDDDD;
-	height: 100%;
+	height: 16666px;
 }
 .main .main_top{
 	/* width: ; */
@@ -422,6 +425,9 @@ input[type=checkbox]{
 .main .main_top li{
 	margin-right: 80px;
 	float: left;
+}
+.main img{
+	display: block;
 }
 .main .main_top li a{
 	display: block;
@@ -435,14 +441,21 @@ input[type=checkbox]{
 .main .abstract{
 	margin: 0 auto;
 	background: #f2f3f5;
+	overflow: hidden;
 }
 .main .abstract li img{
+	margin-left: -200px;
+}
+.main .present li img{
 	width: 100%;
+	height: 400px;
+	margin-left: 0;
 }
 .main .abstract .present {
 	background: #FFFFFF;
 	height: 400px;
 	margin-top: 10px;
+	margin-bottom: 90px;
 }
 .main .abstract .present li{
 	float: left;
