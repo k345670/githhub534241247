@@ -30,6 +30,7 @@ window.onload = function () {
         //定义偏移大小,
         l = l < 0 ? 0 : (l > maxeel ? maxeel : l);
         t = t < 0 ? 0 : (t > maxeet ? maxeet : t);
+        // $min = $min < 0 ? 0 : ($min > )
 
         //写入left和top
         $("._xuan").css({ left: l + "px", top: t + "px" });
@@ -51,4 +52,21 @@ window.onload = function () {
     $(".left").on("click", function () {
         $(".ol_list ol").css({ left: 0 });
     });
+
+    //商品数量
+    //定义0-5
+
+    var $max = 0;
+    $(".amount_right").on('click', function () {
+        if ($max < 5) {
+            $max++;
+            $(".amount_nume").val($max);
+        }
+    })
+    $(".amount_left").on('click', function () {
+        if ($max > 0) {
+            $max--;
+            $(".amount_nume").val($max);
+        }
+    })
 };

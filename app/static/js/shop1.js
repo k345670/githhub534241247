@@ -12,8 +12,8 @@ var shop = (function () {
                 var target = e.target || e.srcElement;
                 if (target.className == "shop_buy") {
                     var count = document.querySelector('.amount_nume').value;
-                    _this.data[0].count = Number(count);
-                    _this.setItem(_this.data[0]);
+                    _this.data.count = Number(count);
+                    _this.setItem(_this.data);
                 }
             }
         },
@@ -22,8 +22,8 @@ var shop = (function () {
                 res = JSON.parse(res);
                 if (res.code == 0) {
                     // 把商品数据存到shop对象里
-                    this.data = res.data;
-                    // console.log(this.data);
+                    this.data = res.data[1];
+                    // console.log(res.data[1]);
                     this.insertData(res.data);
                 } else {
                     alert("获取信息失败, 请查询网络状况");
@@ -31,13 +31,15 @@ var shop = (function () {
             });
         },
         insertData(data) {
-            console.log(data);
-            // 循环数组
+            // console.log(data);
+            // // 循环数组
             // for (let i = 0; i < data.length; i++) {
             //     var index = i;
             // }
         },
+        // 把商品数据存储到本地
         setItem(data) {
+            // 现获取原有数据
             console.log(data);
             var shopList = localStorage.getItem('shopList') || '[]';
             shopList = JSON.parse(shopList);
@@ -49,15 +51,18 @@ var shop = (function () {
                     console.log(shopList[i]);
                     break;
                 }
-                console.log(shopList);
             }
             if (i == shopList.length) {
                 // 商品不存在
                 shopList.push(data);
-            } console.log(shopList);
+                console.log(data);
+
+            }
             // shopList[i].count += data.count;
             // 在把全部数据存到本地
             localStorage.shopList = JSON.stringify(shopList);
+            // console.log(shopList);
+
         }
     }
 }())

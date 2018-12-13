@@ -5,6 +5,8 @@
  $username = $_POST['username'];
 
  $password = $_POST['password'];
+//  $user_p=$_POST['user_p1'];
+//  var_dump($user_p);
 
  //服务器进入方式不同
  $coon = new mysqli('localhost','root','root','vivo_admin');
@@ -23,14 +25,15 @@
 
      if($row["password"] == $password){
         //  echo 1;
-         echo "<script>alert('恭喜您，登陆成功！');
-        // cookie.setItem('$username', '', 30);
-         location.href='../../app/home.html'</script>";
+         echo "<script>alert('恭喜您，登陆成功！');location.href='../../app/home.html#$username='</script>";
      }else{
-         echo "<script>alert('密码错误，请查证后再输！')</script>";
+        //  echo
+         echo "<script>alert('密码错误，请查证后再输！');location.href='http://localhost/githhub534241247/app/register.html'</script>";
      }
  }else{
-     echo "<script>alert('账号密码错误，请重新输入！')</script>";
+    //  echo 2;
+     echo "
+     <script>alert('账号密码错误，请重新输入！');location.href='http://localhost/githhub534241247/app/register.html'</script>";
  }
 
 ?>

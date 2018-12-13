@@ -20,10 +20,4 @@
 	if($row){
 		echo "<script>location.href='../../app/register.html'</script>";
 	}
-
-	// if($row){
-    //     //注册成功，调到登陆也。
-    //      echo "<script>alert('恭喜你，注册成功！！！');location.href='../html/denglu.html'</script>";
-    // }else{
-    //      echo "<script>alert('不幸的是，注册失败！') ;location.href='zhuce.html'</script>";
 ?>

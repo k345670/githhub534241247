@@ -20,17 +20,17 @@
 					<div class="form-group has-success code">
 						<label for="username"></label>
 						<input type="text" class="form-control" id="username" name="username" placeholder="手机号/邮箱/用户名" data-error="请输入正确的手机号">
-						<p class=""></p>
+						<!-- <p class=""></p> -->
 					</div>
 					<div class="form-group has-success code">
 						<label for="password"></label>
 						<input type="text" class="form-control" name="password" placeholder="密码" data-error="密码正确">
-						<p class=""></p>
+						<p class="user_p" name="user_p1"></p>
 					</div>
 					<span class="hint"><img src="static/images/register/uncheck.png" />两周内自动登录</span>
 					<a href="#" class="title">忘记密码 ?</a>
 					<button name="submit" class="send" value="注册">登录</button>
-					<a href="http://localhost:3456/login.html" style="display: block; height: 45px; background: #DFDFDF; width: 380px; line-height: 45px; text-align: center;margin-top: 10px;margin-left:20px;">注册vivo账号</a>
+					<a href="http://localhost/githhub534241247/app/login.html" style="display: block; height: 45px; background: #DFDFDF; width: 380px; line-height: 45px; text-align: center;margin-top: 10px;margin-left:20px;">注册vivo账号</a>
 				</form>
 				<div class="list">
 					<p>其他方式登录</p>
@@ -53,41 +53,3 @@
 </html>
 <script src="static/js/jquery.js"> </script>
 <script src="static/js/cookie.js"></script>
-
-<script>
-	$btn = $(".send");
-	// // console.log($btn);
-	$inp = $("#username");
-	// $btn.onclick = function () {
-	// 	var key = $inp;
-	// 	console.log(key);
-	// 	var value = $inp.value;
-	// 	cookie.setItem(key, value, 1);
-	// }
-	$btn.onclick = function () {
-		ajax({
-			method: "post",
-			url: "http://localhost/githhub534241247/server/php/register.php",
-			data: {
-				tel: this.value
-			},
-			success: function (res) {
-				console.log(res);
-				if (res == "1") {
-					var key = $inp;
-					var value = $inp.value;
-					cookie.setItem(key, value, 1);
-				} else {
-					// $span.className = 'text-success';
-					// $span.innerHTML = '';
-				}
-			}
-		})
-	}
-
-
-
-
-
-
-</script>

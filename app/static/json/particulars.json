@@ -3,6 +3,7 @@
     "data": [
         {
             "id": 1,
+            "title": "NEX全面屏星钻黑颜色：星钻黑",
             "ac1": "static/images/particulars/left_big01.png",
             "ac2": "static/images/particulars/left_big02.png",
             "ac3": "static/images/particulars/left_big03.png",
@@ -13,8 +14,26 @@
             "xt3": "static/images/particulars/left_mini03.png",
             "xt4": "static/images/particulars/left_mini04.png",
             "xt5": "static/images/particulars/left_mini05.png",
-            "min-price": "￥4298",
-            "max-price": "￥4498"
+            "max_price": "4498.00",
+            "min_price": "4298.00",
+            "yh": "200.00"
+        },
+        {
+            "id": 2,
+            "title": "X23 幻彩版 6GB+128GB 北极晨曦",
+            "ac1": "static/images/particulars/json2d1.png",
+            "ac2": "static/images/particulars/json2d2.png",
+            "ac3": "static/images/particulars/json2d3.png",
+            "ac4": "static/images/particulars/json2d4.png",
+            "ac5": "static/images/particulars/json2d5.png",
+            "xt1": "static/images/particulars/json2x1.png",
+            "xt2": "static/images/particulars/json2x2.png",
+            "xt3": "static/images/particulars/json2x3.png",
+            "xt4": "static/images/particulars/json2x4.png",
+            "xt5": "static/images/particulars/json2x5.png",
+            "max_price": "3498.00",
+            "min_price": "3298.00",
+            "yh": "200.00"
         }
     ]
 }

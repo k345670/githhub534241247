@@ -62,11 +62,11 @@ body{
 }
 .shop_car .shop_list .item li:nth-child(2){
 	border: 1px solid #CCCCCC;
-	margin-left: -50px;
+	margin-left: -90px;
 }
 .shop_car .shop_list .item li:nth-child(3){
 	margin-left: -70px;
-	width: 200px;
+	width: 166px;
 }
 .shop_car .shop_list .item li:nth-child(8){
 	margin-left: 20px;
@@ -97,4 +97,14 @@ body{
 .shop_car .shop_list .item li:nth-child(9){
 	width: 100px;
 	text-align: center;
+}
+.shop_car .shop_list .item li button{
+	background: #fff;
+    width: 90px;
+    height: 35px;
+    outline: none;
+    border: 1px solid #000;
+    border-radius: 5px;
+    margin-top: 5px;
+    color: red;
 }
